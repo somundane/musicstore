@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="FinalProj.User" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Styles/masterstyle.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/JavaScript.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <header>
+                <nav class="my-navbar navbar navbar-waring">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">Studio 98</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="UserDefault.aspx">About</a></li>
+                            <li><a href="UserProductList.aspx">Albums</a></li>
+                            <li><a href="Cart.aspx">Cart</a></li>
+                            <li><a href="Purchases.aspx">Purchases</a></li>
+                            <!--<li><a href="Digital">Digital Downloads</a></li>
+                            <li><a href="Deliveries.aspx">Pending Orders</a></li>-->
+                        </ul>
+                        <div class="nav navbar-nav navbar-right">
+                            <a href="LogOut.aspx" class="navbar-brand"><strong>Logout</strong></a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <article>
+                <asp:ContentPlaceHolder ID="body" runat="server" />
+            </article>
+            <footer>
+                <div class="text-center">
+                    <strong>Page and Graphics By Dana </strong>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
